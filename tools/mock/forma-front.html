@@ -1,0 +1,99 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=block">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1200px;height:760px;overflow:hidden;background:#f2efe9;font-family:Inter;color:#161616;-webkit-font-smoothing:antialiased}
+.chrome{height:44px;display:flex;align-items:center;gap:8px;padding:0 18px;background:#e7e4de;border-bottom:1px solid #d9d5ce}
+.chrome i{width:11px;height:11px;border-radius:50%}
+.url{margin-left:18px;width:460px;height:26px;border-radius:7px;background:#fff;color:#777;font:13px Inter;display:flex;align-items:center;padding:0 12px}
+.page{position:relative;height:716px;display:flex;flex-direction:column}
+nav{display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:76px}
+.logo{font:italic 400 34px 'Instrument Serif';letter-spacing:-.01em}
+.links{display:flex;gap:34px;font-size:14px;color:#3b3b3b}
+.cart{font-size:14px;display:flex;align-items:center;gap:8px}
+.cart b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#161616;color:#f2efe9;font-size:11px;font-weight:600}
+main{display:grid;grid-template-columns:1fr 1.06fr;gap:44px;padding:0 48px 28px;flex:1;min-height:0}
+.left{display:flex;flex-direction:column;justify-content:center;padding-bottom:10px}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4a4a4a;width:max-content}
+.eyebrow span:not(.tag){width:7px;height:7px;border-radius:50%;background:#5b8f91}
+h1{font:400 108px/0.9 'Instrument Serif';letter-spacing:-.025em;margin-top:22px}
+h1 em{color:#3f7476}
+.lede{margin-top:22px;font-size:17px;line-height:1.55;color:#555;max-width:400px}
+.buy{margin-top:30px;display:flex;align-items:center;gap:22px;width:max-content}
+.price{font:400 40px 'Instrument Serif'}
+.sw{display:flex;gap:8px}
+.sw i{width:22px;height:22px;border-radius:50%;border:2px solid #f2efe9;box-shadow:0 0 0 1px #bdb8b0}
+.sw i:first-child{box-shadow:0 0 0 1.5px #161616}
+.actions{margin-top:24px;display:flex;gap:12px;width:max-content}
+.btn{padding:16px 26px;border-radius:999px;font-size:15px;font-weight:500}
+.btn.dark{background:#161616;color:#f2efe9}
+.btn.line{border:1px solid #bdb8b0}
+.specs{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #d9d5ce;max-width:500px}
+.specs div{padding-top:14px;font-size:13px;color:#555}
+.specs b{display:block;font-weight:500;color:#161616;font-size:14px;margin-bottom:2px}
+.media{position:relative;border-radius:22px;overflow:hidden;background:#86aeb1}
+.media img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;display:block}
+.card{position:absolute;left:20px;bottom:20px;background:#f2efe9;border-radius:14px;padding:14px 16px;display:flex;gap:14px;align-items:center;font-size:13px}
+.card .thumb{width:44px;height:44px;border-radius:9px;background:#86aeb1}
+.card b{display:block;font-weight:600;font-size:14px}
+.dots{position:absolute;right:22px;bottom:30px;display:flex;gap:6px}
+.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55)}
+.dots i:first-child{background:#fff;width:22px;border-radius:4px}
+.code,.tag,.dim{display:none}
+
+</style></head>
+<body class="front">
+<div class="chrome"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>
+  <div class="url">forma.store</div></div>
+<div class="page">
+  <nav data-x><span class="tag">&lt;Nav /&gt;</span>
+    <span class="logo">forma</span>
+    <span class="links"><span>Chairs</span><span>Tables</span><span>Lighting</span><span>Journal</span></span>
+    <span class="cart">Cart <b>2</b></span>
+    <pre class="code" style="left:150px;top:22px"><span style="color:#8be5bd">&lt;Nav</span><span style="color:#89938d"> links=</span><span style="color:#6b756f">{</span><span style="color:#89938d">categories</span><span style="color:#6b756f">}</span><span style="color:#89938d"> </span><span style="color:#8be5bd">/&gt;</span></pre>
+  </nav>
+  <main>
+    <div class="left">
+      <div class="eyebrow" data-x><span class="tag">&lt;Eyebrow&gt;</span><span></span>New · The Nord chair</div>
+      <h1 data-x><span class="tag">&lt;h1&gt;</span>Made to be<br><em>sat in.</em>
+        <pre class="code" style="left:258px;top:104px"><span style="color:#8be5bd">&lt;h</span><span style="color:#89938d">1 className=</span><span style="color:#f5f7f6">"font-serif"</span><span style="color:#8be5bd">&gt;</span>
+<span style="color:#89938d">  Made to be </span><span style="color:#8be5bd">&lt;em</span><span style="color:#8be5bd">&gt;</span><span style="color:#89938d">sat in.</span><span style="color:#8be5bd">&lt;/em</span><span style="color:#8be5bd">&gt;</span>
+<span style="color:#8be5bd">&lt;/h</span><span style="color:#e6c07b">1</span><span style="color:#8be5bd">&gt;</span></pre>
+      </h1>
+      <p class="lede" data-x><span class="tag">&lt;p&gt;</span>Solid oak legs, a seat shaped around you, and a 12-year warranty. Built to outlast trends.
+        
+      </p>
+      <div class="buy" data-x><span class="tag">&lt;Price /&gt; &lt;Swatches /&gt;</span>
+        <span class="price">$240</span>
+        <span class="sw"><i style="background:#161616"></i><i style="background:#c8a47a"></i><i style="background:#ffffff"></i></span>
+        <pre class="code" style="left:calc(100% + 22px);top:4px"><span style="color:#8be5bd">&lt;Price</span><span style="color:#89938d"> value=</span><span style="color:#6b756f">{</span><span style="color:#e6c07b">240</span><span style="color:#6b756f">}</span><span style="color:#89938d"> </span><span style="color:#8be5bd">/&gt;</span></pre>
+      </div>
+      <div class="actions" data-x><span class="tag">&lt;Actions&gt;</span>
+        <a class="btn dark">Add to cart</a><a class="btn line">See it in your room</a>
+        <pre class="code" style="left:calc(100% + 22px);top:10px"><span style="color:#8be5bd">&lt;AddToCart</span><span style="color:#89938d"> </span><span style="color:#8be5bd">/&gt;</span></pre>
+      </div>
+      <div class="specs" data-x><span class="tag">&lt;Specs&gt;</span>
+        <div><b>Solid oak</b>FSC certified</div><div><b>4.2 kg</b>Easy to move</div><div><b>Ships in 3 days</b>Free returns</div>
+        
+      </div>
+    </div>
+    <div class="media" data-x><span class="tag">&lt;Image priority /&gt;</span>
+      <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=1400&q=85&auto=format&fit=crop" alt="">
+      <pre class="code" style="left:22px;top:30px"><span style="color:#8be5bd">&lt;Image</span>
+<span style="color:#89938d">  src=</span><span style="color:#f5f7f6">"/products/nord-black.jpg"</span>
+<span style="color:#89938d">  alt=</span><span style="color:#f5f7f6">"Nord chair in black"</span>
+<span style="color:#89938d">  width=</span><span style="color:#6b756f">{</span><span style="color:#e6c07b">1200</span><span style="color:#6b756f">}</span>
+<span style="color:#89938d">  height=</span><span style="color:#6b756f">{</span><span style="color:#e6c07b">1400</span><span style="color:#6b756f">}</span>
+<span style="color:#89938d">  priority</span>
+<span style="color:#89938d">  sizes=</span><span style="color:#f5f7f6">"(min-width: 768px) 50vw, 100vw"</span>
+<span style="color:#89938d">  className=</span><span style="color:#f5f7f6">"rounded-3xl object-cover"</span>
+<span style="color:#8be5bd">/&gt;</span></pre>
+      <span class="dim" style="right:14px;top:12px">560 × 612</span>
+      <div class="card" data-x><span class="tag">&lt;ProductCard&gt;</span><span class="thumb"></span><span><b>Nord chair</b>Black · Oak legs</span>
+        <pre class="code" style="left:0;top:-62px"><span style="color:#8be5bd">&lt;ProductCard</span><span style="color:#89938d"> </span><span style="color:#6b756f">{</span><span style="color:#89938d">...product</span><span style="color:#6b756f">}</span><span style="color:#89938d"> </span><span style="color:#8be5bd">/&gt;</span></pre>
+      </div>
+      <div class="dots"><i></i><i></i><i></i><i></i></div>
+    </div>
+  </main>
+</div>
+</body></html>
